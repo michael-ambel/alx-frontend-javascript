@@ -36,7 +36,6 @@ console.log(createEmployee("$500"));
 function isDirector(employee) {
     return employee.workDirectorTasks !== undefined;
 }
-// Function to execute work based on the employee type
 function executeWork(employee) {
     if (isDirector(employee)) {
         console.log(employee.workDirectorTasks());
@@ -45,6 +44,16 @@ function executeWork(employee) {
         console.log(employee.workTeacherTasks());
     }
 }
-// Test the createEmployee function and executeWork
-executeWork(createEmployee(200)); // Getting to work
-executeWork(createEmployee(1000)); // Getting to director tasks
+executeWork(createEmployee(200));
+executeWork(createEmployee(1000));
+function teachClass(todayClass) {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    }
+    else if (todayClass === "History") {
+        return "Teaching History";
+    }
+    return "Invalid class";
+}
+console.log(teachClass("Math"));
+console.log(teachClass("History"));

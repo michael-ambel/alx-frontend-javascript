@@ -1,0 +1,16 @@
+{
+  "name": "task_3",
+  "version": "1.0.0",
+  "main": "js/main.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

@@ -67,3 +67,20 @@ function executeWork(employee: DirectorInterface | TeacherInterface): void {
 
 executeWork(createEmployee(200));
 executeWork(createEmployee(1000));
+
+//................................... task 7
+
+type Subjects = "Math" | "History";
+
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else if (todayClass === "History") {
+    return "Teaching History";
+  }
+
+  return "Invalid class";
+}
+
+console.log(teachClass("Math"));
+console.log(teachClass("History"));
